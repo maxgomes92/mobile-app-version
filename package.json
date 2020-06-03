@@ -1,0 +1,26 @@
+{
+  "name": "mobile-app-version",
+  "version": "0.0.1",
+  "description": "Fetches HTML page on Play Store and returns your current app version.",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "jest src/test.js"
+  },
+  "keywords": [
+    "mobile",
+    "app",
+    "version",
+    "play",
+    "store"
+  ],
+  "author": "Max Gomes",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2"
+  },
+  "devDependencies": {
+    "jest": "^26.0.1",
+    "semver": "^7.3.2"
+  }
+}
