@@ -3,9 +3,16 @@
   "version": "0.0.1",
   "description": "Fetches HTML page on Play Store and returns your current app version.",
   "type": "module",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
     "start": "node src/index.js",
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js src/test.js"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js src/test.js",
+    "build": "rm -rf dist && mkdir dist && NODE_ENV=production && npm run build:mjs && npm run build:cjs",
+    "build:mjs": "babel src -d dist/mjs --ignore src/test.js",
+    "build:cjs": "BABEL_ENV=cjs babel src -d dist/cjs --ignore src/test.js"
   },
   "keywords": [
     "mobile app",
@@ -19,6 +26,10 @@
     "axios": "^0.19.2"
   },
   "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/plugin-transform-modules-commonjs": "^7.10.1",
+    "@babel/plugin-transform-runtime": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
     "eslint": "^7.1.0",
     "eslint-config-standard": "^14.1.1",
     "eslint-plugin-import": "^2.20.2",
