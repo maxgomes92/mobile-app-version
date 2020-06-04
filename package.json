@@ -8,11 +8,10 @@
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js src/test.js"
   },
   "keywords": [
-    "mobile",
-    "app",
-    "version",
-    "play",
-    "store"
+    "mobile app",
+    "app version",
+    "play store",
+    "app store"
   ],
   "author": "Max Gomes",
   "license": "ISC",
