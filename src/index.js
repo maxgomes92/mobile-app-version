@@ -14,8 +14,8 @@ export function getAndroidVersion (id) {
         const regex = new RegExp(ANDROID_REGEX)
         const result = regex.exec(data)
 
-        if (result) {
-          resolve(result.groups.version)
+        if (result && result[1]) {
+          resolve(result[1])
         } else {
           reject(new Error('It was not possible to parse.'))
         }
@@ -33,8 +33,8 @@ export function getIosVersion (id) {
         const regex = new RegExp(IOS_REGEX)
         const result = regex.exec(data)
 
-        if (result) {
-          resolve(result.groups.version)
+        if (result && result[1]) {
+          resolve(result[1])
         } else {
           reject(new Error('It was not possible to parse.'))
         }
