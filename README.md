@@ -4,7 +4,7 @@
 
 This small library fetches HTML page from Play Store and App Store, parses and returns your app version.
 
-This is useful when in your hybrid app you want find out if the running version is or not the latest so you can prompt a message suggesting an update.
+This is useful when in your hybrid app you want to find out if the running version is not the latest so you can prompt a message suggesting an update.
 
 ## Install
 
@@ -32,7 +32,7 @@ getAndroidVersion('my.app.package').then(version => {
 ```js
 import { getIosVersion } from 'mobile-app-version'
 
-getAndroidVersion('id123456789').then(version => {
+getIosVersion('id123456789').then(version => {
   // Returns semantic version as string
   // e.g. '0.0.1'
 })
