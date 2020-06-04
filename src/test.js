@@ -9,7 +9,7 @@ describe('tests Android parser', () => {
     const version = await getAndroidVersion('com.makeztec.bomdiadatitia')
     expect(semver.valid(version)).toBeTruthy()
   })
-  
+
   it('returns 404 to invalid android package', async () => {
     expect(getAndroidVersion('my.invalid.package'))
       .rejects
@@ -22,7 +22,7 @@ describe('tests iOS parser', () => {
     const version = await getIosVersion('id433151512')
     expect(semver.valid(version)).toBeTruthy()
   })
-  
+
   it('returns 404 to invalid ios package', async () => {
     expect(getAndroidVersion('0912830912'))
       .rejects

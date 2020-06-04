@@ -7,7 +7,7 @@ const ANDROID_REGEX = />Current Version<.*>(?<version>\d{1,}.\d{1,}.\d{1,})</gm
 const IOS_REGEX = />Version\s*(?<version>\d{1,}.\d{1,}.\d{1,})</gm
 
 export function getAndroidVersion (id) {
-  return new Promise ((resolve, reject) => {
+  return new Promise((resolve, reject) => {
     axios
       .get(PLAY_STORE_URL + id)
       .then(({ data }) => {
@@ -26,9 +26,9 @@ export function getAndroidVersion (id) {
 }
 
 export function getIosVersion (id) {
-  return new Promise ((resolve, reject) => {
+  return new Promise((resolve, reject) => {
     axios
-      .get(APP_STORE_URL + id)  
+      .get(APP_STORE_URL + id)
       .then(({ data }) => {
         const regex = new RegExp(IOS_REGEX)
         const result = regex.exec(data)
