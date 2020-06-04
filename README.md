@@ -1,6 +1,6 @@
 # Mobile App Version
 
-## [![NPM version](https://img.shields.io/npm/v/mobile-app-version.svg?style=flat)](https://www.npmjs.com/package/mobile-app-version) [![NPM monthly downloads](https://img.shields.io/npm/dm/mobile-app-version.svg?style=flat)](https://npmjs.org/package/mobile-app-version) [![NPM total downloads](https://img.shields.io/npm/dt/mobile-app-version.svg?style=flat)](https://npmjs.org/package/is-odd)
+## [![NPM version](https://img.shields.io/npm/v/mobile-app-version.svg?style=flat)](https://www.npmjs.com/package/mobile-app-version) [![NPM monthly downloads](https://img.shields.io/npm/dm/mobile-app-version.svg?style=flat)](https://npmjs.org/package/mobile-app-version) [![NPM total downloads](https://img.shields.io/npm/dt/mobile-app-version.svg?style=flat)](https://npmjs.org/package/mobile-app-version)
 
 This small library fetches HTML page from Play Store and App Store, parses and returns your app version.
 
