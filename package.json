@@ -1,6 +1,6 @@
 {
   "name": "mobile-app-version",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "Fetches your app version from Play Store and App Store.",
   "homepage": "https://github.com/maxgomes92/mobile-app-version",
   "author": "Max Gomes <maxgomes92@live.com>",
