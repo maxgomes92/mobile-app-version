@@ -1,8 +1,12 @@
 {
   "name": "mobile-app-version",
-  "version": "0.0.1",
-  "description": "Fetches HTML page on Play Store and returns your current app version.",
+  "version": "0.1.0",
+  "description": "Fetches your app version from Play Store and App Store.",
+  "homepage": "https://github.com/maxgomes92/mobile-app-version",
+  "author": "Max Gomes <maxgomes92@live.com>",
   "type": "module",
+  "module": "dist/mjs/index.js",
+  "main": "dist/cjs/index.js",
   "files": [
     "dist",
     "README.md"
@@ -20,8 +24,7 @@
     "play store",
     "app store"
   ],
-  "author": "Max Gomes",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "axios": "^0.19.2"
   },
