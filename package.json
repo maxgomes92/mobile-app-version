@@ -17,7 +17,7 @@
     "build": "rm -rf dist && mkdir dist && NODE_ENV=production && npm run build:mjs && npm run build:cjs",
     "build:mjs": "babel src -d dist/mjs --ignore src/test.js",
     "build:cjs": "BABEL_ENV=cjs babel src -d dist/cjs --ignore src/test.js",
-    "prepublish": "npm run test && npm run build"
+    "prepublishOnly": "npm run test && npm run build"
   },
   "keywords": [
     "mobile app",
@@ -27,6 +27,7 @@
   ],
   "license": "MIT",
   "dependencies": {
+    "@babel/runtime": "^7.10.2",
     "axios": "^0.19.2"
   },
   "devDependencies": {
