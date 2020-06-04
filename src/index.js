@@ -43,6 +43,3 @@ export function getIosVersion (id) {
       })
   })
 }
-
-getAndroidVersion('com.makeztec.bomdiadatitia').then(console.log)
-getIosVersion('id433151512').then(console.log)
