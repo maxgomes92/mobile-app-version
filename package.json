@@ -1,6 +1,6 @@
 {
   "name": "mobile-app-version",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Fetches your app version from Play Store and App Store.",
   "homepage": "https://github.com/maxgomes92/mobile-app-version",
   "author": "Max Gomes <maxgomes92@live.com>",
@@ -16,7 +16,8 @@
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js src/test.js",
     "build": "rm -rf dist && mkdir dist && NODE_ENV=production && npm run build:mjs && npm run build:cjs",
     "build:mjs": "babel src -d dist/mjs --ignore src/test.js",
-    "build:cjs": "BABEL_ENV=cjs babel src -d dist/cjs --ignore src/test.js"
+    "build:cjs": "BABEL_ENV=cjs babel src -d dist/cjs --ignore src/test.js",
+    "prepublish": "npm run test && npm run build"
   },
   "keywords": [
     "mobile app",
